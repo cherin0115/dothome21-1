@@ -39,7 +39,11 @@
 
     <!-- header -->
     <header class="paraInfo">
+<<<<<<< HEAD
         <h1><a href="index.html">Parallax Effect06 - jQuery</a></h1>
+=======
+        <h1><a href="index.html">Parallax Effect06 - javascript</a></h1>
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         <p>패랠랙스 스크로링 효과 - 이질감</p>
     </header>
     <!-- //header -->
@@ -222,6 +226,7 @@
                     </div>
                     <div class="view-cont">
                         <div class="html">
+<<<<<<< HEAD
                             <pre><code class="language-html">&lt;main&gt;
     &lt;div class="paraScroll"&gt;scrollTop() : &lt;span&gt;0&lt;/span&gt;px&lt;/div&gt;
 
@@ -358,6 +363,14 @@
 .paraNav li.active a {
     border-radius: 30px;
 }
+=======
+                            <pre><code class="language-html">
+</code></pre>
+                        </div>
+                        <div class="css">
+                            <pre><code class="language-css">
+ 
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
 </code></pre>
                         </div>
                         <div class="javascript">
@@ -374,6 +387,7 @@
 
 
     <!-- script -->
+<<<<<<< HEAD
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/highlight.min.js"></script>
     <script>
@@ -426,6 +440,50 @@
             //메뉴
             document.querySelectorAll('.content-item').forEach((item, idx) => {
                 if (scrollTop > item.offsetTop - 2) {
+=======
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script>
+        const scrollProgress = function () {
+            let scrollTop = window.pageYoffset || document.documentElement.scrollTop || window.scrollY;
+
+            // let offset1 = scrollTop - document.getElementById("section1").offsetTop;
+            // let offset2 = scrollTop - document.getElementById("section2").offsetTop;
+            // let offset3 = scrollTop - document.getElementById("section3").offsetTop;
+            // let offset4 = scrollTop - document.getElementById("section4").offsetTop;
+            // let offset5 = scrollTop - document.getElementById("section5").offsetTop;
+            // let offset6 = scrollTop - document.getElementById("section6").offsetTop;
+            // let offset7 = scrollTop - document.getElementById("section7").offsetTop;
+            // let offset8 = scrollTop - document.getElementById("section8").offsetTop;
+            // let offset9 = scrollTop - document.getElementById("section9").offsetTop;
+
+            // document.getElementById("section1").style.transform = "translateX("+offset1+"px)";
+            // document.getElementById("section2").style.transform = "translateX("+offset2+"px)";
+            // document.getElementById("section3").style.transform = "translateX("+offset3+"px)";
+            // document.getElementById("section4").style.transform = "translateX("+offset4+"px)";
+            // document.getElementById("section5").style.transform = "translateX("+offset5+"px)";
+            // document.getElementById("section6").style.transform = "translateX("+offset6+"px)";
+            // document.getElementById("section7").style.transform = "translateX("+offset7+"px)";
+            // document.getElementById("section8").style.transform = "translateX("+offset8+"px)";
+            // document.getElementById("section9").style.transform = "translateX("+offset9+"px)";
+
+
+
+            document.querySelectorAll(".content-item").forEach(item => {
+                let offset1 = (scrollTop - item.offsetTop) * 0.1;
+                let offset1 = (scrollTop - item.offsetTop) * 0.2;
+
+                item.querySelector(".img").style.transform = "translateX(" + offset1 + "px)";
+                item.querySelector(".desc").style.transform = "translateX(" + -offset2 + "px)";
+
+            });
+
+            //메뉴
+            document.querySelectorAll('.content-item').forEach((item, index) => {
+                if (scrollTop > item.offsetTop) {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
                     document.querySelectorAll('.paraNav ul li').forEach(li => {
                         li.classList.remove('active');
                     });
@@ -434,6 +492,7 @@
                 }
             });
 
+<<<<<<< HEAD
             //출력
             document.querySelector('.paraScroll span').innerText = parseInt(scrollTop);
         }
@@ -441,6 +500,14 @@
 
         window.addEventListener('scroll', scrollProgress);
         scrollMenu();
+=======
+
+            //출력
+            document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
+
+        }
+        window.addEventListener("scroll", scrollProgress)
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
     </script>
 </body>
 

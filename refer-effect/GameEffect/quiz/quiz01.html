@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,40 +13,33 @@
             font-weight: normal;
             font-style: normal;
         }
-
-        *,
-        *:before,
-        *:after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        *, *:before, *:after {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
-
         a {
             text-decoration: none;
         }
-
         li {
             list-style: none;
         }
-
         body {
             font-family: 'DungGeunMo';
             height: 100vh;
             background-color: #f6f6f6;
             background-image:
-                linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px, transparent 100px),
-                linear-gradient(#cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px, transparent 100px),
-                linear-gradient(#e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, transparent 100px),
-                linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, transparent 100px),
-                linear-gradient(transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
-                linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, #e0e0e0 99px, #e0e0e0 100px),
-                linear-gradient(90deg, transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
-                linear-gradient(transparent 0px, transparent 1px, #f6f6f6 1px, #f6f6f6 99px, transparent 99px, transparent 100px),
-                linear-gradient(#cdcccc, #cdcccc);
-            background-size: 100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
+            linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
+            linear-gradient(#cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
+            linear-gradient(#e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
+            linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
+            linear-gradient(transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
+            linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, #e0e0e0 99px, #e0e0e0 100px),
+            linear-gradient(90deg, transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
+            linear-gradient(transparent 0px, transparent 1px, #f6f6f6 1px, #f6f6f6 99px, transparent 99px, transparent 100px),
+            linear-gradient(#cdcccc, #cdcccc);
+            background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
         }
-
         header {
             position: absolute;
             left: 0;
@@ -60,22 +52,23 @@
             align-items: center;
             z-index: 9999;
         }
-
         header::before {
             content: '';
             width: calc(100% - 10px);
             height: calc(100% - 10px);
             border: 4px ridge #a3a3a3;
             position: absolute;
+<<<<<<< HEAD
             left: 5px;
             top: 5px;
+=======
+            left: 5px; top: 5px;
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             z-index: -1;
         }
-
         header h1 {
             padding: 5px 30px 5px 20px;
         }
-
         nav ul {
             display: flex;
         }
@@ -83,89 +76,106 @@
         nav li {
             margin-right: 20px;
         }
+<<<<<<< HEAD
 
         nav li a {
             color: rgba(171, 171, 171, 1);
+=======
+        nav li a {
+            color: rgb(171, 171, 171);
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         }
 
         nav li a:hover {
+<<<<<<< HEAD
             border-bottom: 1px solid rgba(171, 171, 171, 1);
+=======
+            border-bottom: 1px solid rgb(171, 171, 171);
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         }
 
         nav li.active a {
             color: #fff;
         }
+<<<<<<< HEAD
 
         nav li.active a:hover {
+=======
+        nav li.active:hover a {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             border-bottom: 1px solid #fff;
         }
-
         .ham {
             position: absolute;
-            right: 20px;
-            top: 16px;
+            right: 20px; top: 16px;
             cursor: pointer;
-            width: 30px;
-            height: 30px;
+            width: 30px; height: 30px;
             display: none;
         }
-
         .ham span {
-            width: 20px;
-            height: 3px;
+            width: 20px; height: 3px;
             background: #fff;
             display: block;
             position: absolute;
-            left: 5px;
-            top: 13px;
+            left: 5px; top: 13px;
         }
-
         .ham span::before {
             content: '';
-            width: 20px;
-            height: 3px;
+            width: 20px; height: 3px;
             background: #fff;
             position: absolute;
-            left: 0;
-            top: 7px;
+            left: 0; top: 7px;
         }
-
         .ham span::after {
             content: '';
+<<<<<<< HEAD
             width: 20px;
             height: 2px;
+=======
+            width: 20px; height: 3px;
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             background: #fff;
             position: absolute;
-            left: 0;
-            bottom: 7px;
+            left: 0; bottom: 7px;
         }
 
         .quiz-wrap {
             max-width: 500px;
             width: 100%;
+<<<<<<< HEAD
             background-color: #fff;
+=======
+            background: #fff;
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             margin: 100px auto;
             border: 8px ridge #cacaca;
         }
-
         .quiz-wrap h2 {
             font-size: 14px;
             text-align: center;
+<<<<<<< HEAD
             background-color: #cacaca;
             height: 4%;
+=======
+            background: #cacaca;
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             color: #3b3b3b;
             border: 3px ridge #cacaca;
             padding: 3px;
             position: relative;
         }
-
         .quiz-wrap h2::before {
             content: '';
             position: absolute;
+<<<<<<< HEAD
             left: 2px;
             top: 2px;
             width: 16px;
             height: 15px;
+=======
+            left: 2px; top: 2px;
+            width: 15px; height: 15px;
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             background: url(dot.jpg) no-repeat;
             background-size: cover;
         }
@@ -173,25 +183,20 @@
         .quiz-wrap h2::after {
             content: '';
             position: absolute;
-            right: 2px;
-            top: 2px;
-            width: 35px;
-            height: 15px;
+            right: 2px; top: 2px;
+            width: 35px; height: 15px;
             background: url(dot.jpg) no-repeat -14px;
             background-size: cover;
         }
-
         .quiz-wrap .quiz {
             border: 4px ridge #cacaca;
         }
-
         .quiz-wrap .quiz .question {
             border-bottom: 6px ridge #cacaca;
             padding: 13px 30px 20px;
             font-size: 24px;
             line-height: 1.4;
         }
-
         .quiz-wrap .quiz .question::before {
             content: 'Q.';
             color: #A5E151;
@@ -199,12 +204,67 @@
             padding-right: 5px;
             text-shadow: 1px 1px 1px #000;
         }
-
         .quiz-wrap .quiz .answer {
+<<<<<<< HEAD
             background-color: #e8e7e8;
+=======
+            background: #E8E7E8;
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             padding: 20px;
         }
+        .quiz-wrap .quiz .answer .answer-confirm {
+            background: #cacaca;
+            text-align: center;
+            padding: 13px 20px;
+            border: 6px groove #fff;
+            font-size: 22px;
+            text-shadow: 1px 1px 1px #fff;
+            width: 100%;
+            font-family: 'DungGeunMo';
+        }
+        .quiz-wrap .quiz .answer .answer-confirm:active {
+            background: #a3a3a3;
+        }
+        .quiz-wrap .quiz .answer .answer-view {
+         text-align: center;
+         border: 6px groove #fff;
+         padding: 13px 20px;   
+         font-size: 20px;
+         display: none;
+        }
+        @media (max-width: 1200px){
+            .ham {display: block;}
+            nav {
+                position: absolute;
+                top: 60px; left: 0;
+                background: #262626;
+                width: 100%;
+                display: none;
+            }
+            nav.show {
+                display: block;
+            }
+            nav ul {
+                display: block;
+                position: relative;
+                padding: 20px;
+                z-index: 1;
+            }
+            nav ul::before {
+                content: '';
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                border: 4px ridge #a3a3a3;
+                position: absolute;
+                left: 5px; top: 5px;
+                z-index: -1;
+            }
+            nav li {
+                padding: 5px;
+            }
+        }
 
+<<<<<<< HEAD
         .quiz-wrap .quiz .answer .answer-confirm {
             background-color: #cacaca;
             text-align: center;
@@ -270,33 +330,48 @@
             }
         }
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         /* dog */
         .card {
             position: relative;
             width: 360px;
             margin: 20px auto;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .head,
         .dog .body {
             position: relative;
             width: 115px;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .head {
             height: 115px;
             border-radius: 50% 50% 0 0;
             margin: 0 auto;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .ears {
             position: relative;
             top: -14%;
             width: 100%;
         }
+<<<<<<< HEAD
 
         .dog .ears::before,
         .dog .ears::after {
+=======
+        .dog .ears::before, .dog .ears::after {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             content: "";
             position: absolute;
             top: 0;
@@ -307,17 +382,26 @@
             border-left: 7px solid #F7AA2B;
             border-right: 7px solid #F7AA2B;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .ears::before {
             left: 0;
             border-radius: 50% 45% 0 0;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .ears::after {
             right: 0;
             border-radius: 45% 50% 0 0;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .face {
             position: absolute;
             background: #F7AA2B;
@@ -325,22 +409,32 @@
             height: 100%;
             border-radius: 50% 50% 0 0;
         }
+<<<<<<< HEAD
 
         .dog .face::before,
         .dog .face::after {
+=======
+        .dog .face::before, .dog .face::after {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             content: "";
             display: block;
             margin: auto;
             background: #FEFEFE;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .face::before {
             width: 15px;
             height: 35px;
             margin-top: 24px;
             border-radius: 20px 20px 0 0;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .face::after {
             position: absolute;
             bottom: -1px;
@@ -350,15 +444,22 @@
             height: 65px;
             border-radius: 45% 45% 0 0;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .eyes {
             position: relative;
             top: 29%;
             text-align: center;
         }
+<<<<<<< HEAD
 
         .dog .eyes::before,
         .dog .eyes::after {
+=======
+        .dog .eyes::before, .dog .eyes::after {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             content: "";
             display: inline-block;
             width: 12px;
@@ -367,7 +468,10 @@
             background: #451d1c;
             margin: 0 14.5%;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .teardrop {
             position: absolute;
             top: 125%;
@@ -379,7 +483,10 @@
             background: #FEFEFE;
             visibility: hidden;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .nose {
             position: relative;
             top: 35%;
@@ -389,7 +496,10 @@
             background: #451d1c;
             margin: auto;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .mouth {
             position: relative;
             top: 34.5%;
@@ -399,9 +509,13 @@
             text-align: center;
             background: #451d1c;
         }
+<<<<<<< HEAD
 
         .dog .mouth::before,
         .dog .mouth::after {
+=======
+        .dog .mouth::before, .dog .mouth::after {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             content: "";
             position: absolute;
             top: -4px;
@@ -413,6 +527,7 @@
             border-top-color: transparent;
             z-index: 2;
         }
+<<<<<<< HEAD
 
         .dog .mouth::before {
             transform: translateX(-89%) rotate(45deg);
@@ -422,10 +537,19 @@
             transform: translateX(-2px) rotate(45deg);
         }
 
+=======
+        .dog .mouth::before {
+            transform: translateX(-89%) rotate(45deg);
+        }
+        .dog .mouth::after {
+            transform: translateX(-2px) rotate(45deg);
+        }
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .tongue {
             position: relative;
             z-index: 1;
         }
+<<<<<<< HEAD
 
         .dog .tongue::before,
         .dog .tongue::after {
@@ -433,6 +557,12 @@
             position: absolute;
         }
 
+=======
+        .dog .tongue::before, .dog .tongue::after {
+            content: "";
+            position: absolute;
+        }
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .tongue::before {
             top: 10px;
             left: -7px;
@@ -442,7 +572,10 @@
             background: #451d1c;
             z-index: -1;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .tongue::after {
             top: 14px;
             left: -4px;
@@ -452,7 +585,10 @@
             background: #F5534F;
             z-index: 5;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .chin {
             position: relative;
             top: 47.5%;
@@ -465,16 +601,23 @@
             border-radius: 2px;
             z-index: 0;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .body {
             position: relative;
             height: 139px;
             margin: auto;
             z-index: 0;
         }
+<<<<<<< HEAD
 
         .dog .body::before,
         .dog .body::after {
+=======
+        .dog .body::before, .dog .body::after {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             content: "";
             position: absolute;
             top: -1px;
@@ -486,14 +629,20 @@
             margin: auto;
             background: #F7AA2B;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .body::after {
             top: -2px;
             bottom: -1px;
             width: 60px;
             background: #FEFEFE;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .tail {
             position: absolute;
             left: -60%;
@@ -506,7 +655,10 @@
             border-radius: 25px 0 0 25px;
             z-index: -2;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .legs {
             position: absolute;
             bottom: 0;
@@ -516,29 +668,40 @@
             background: #F7AA2B;
             border-radius: 10px 10px 0 0;
         }
+<<<<<<< HEAD
 
         .dog .legs::before,
         .dog .legs::after {
+=======
+        .dog .legs::before, .dog .legs::after {
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             content: "";
             position: absolute;
             bottom: 1px;
             background: #CB7A1D;
             z-index: -1;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .legs::before {
             left: -7.5%;
             width: 115%;
             height: 55%;
             border-radius: 5px 5px 0 0;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .dog .legs::after {
             left: -3.5%;
             width: 107%;
             height: 250%;
             border-radius: 20px 20px 35px 35px;
         }
+<<<<<<< HEAD
 
         .card.good .face::before {
             margin-top: 10px;
@@ -553,6 +716,17 @@
         }
 
         .card.good .eyes::before,
+=======
+        .card.good .face::before {
+            margin-top: 10px;
+        }
+        .card.good .face::after{
+            height: 85px;
+        }
+        .card.good .eyes {
+            top: 13%;
+        }
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .card.good .eyes::after {
             width: 18px;
             height: 5px;
@@ -560,6 +734,7 @@
             transform: rotate(-37.5deg);
             border-radius: 20px;
         }
+<<<<<<< HEAD
 
         .card.good .eyes::after {
             transform: rotate(37.5deg);
@@ -577,10 +752,25 @@
             height: 12px;
         }
 
+=======
+        .card.good .eyes::after {
+            transform: rotate(37.5deg);
+        }
+        .card.good .nose {
+            top: 18%;
+        }
+        .card.good .mouth {
+            top: 16.5%;
+        }
+        .card.good .tongue::before {
+            height: 12px;
+        }
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .card.good .tongue::after {
             height: 24px;
             animation: movetongue 0.1s linear 0.35s infinite alternate forwards;
         }
+<<<<<<< HEAD
 
         .card.good .chin {
             top: 34%;
@@ -611,6 +801,30 @@
         }
 
         .card.bad .eyes::before,
+=======
+        .card.good .chin {
+            top: 34%;
+        }
+        .card.good .tail {
+            animation: movetail 0.1s linear infinite alternate forwards;
+        }
+        .card.bad .ears::before {
+            transform: rotate(-50deg) translate(-7px, 2px);
+        }
+        .card.bad .ears::after {
+            transform: rotate(50deg) translate(7px, 2px);
+        }
+        .card.bad .face::before {
+            margin-top: 28px;
+        }
+        .card.bad .face::after {
+            height: 55px;
+        }
+        .card.bad .eyes {
+            top: 38%;
+        }
+        .card.bad .eyes::before, 
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         .card.bad .eyes::after {
             width: 18px;
             height: 5px;
@@ -618,6 +832,7 @@
             transform: rotate(-37.5deg);
             border-radius: 20px;
         }
+<<<<<<< HEAD
 
         .card.bad .eyes::after {
             transform: rotate(37.5deg);
@@ -664,12 +879,44 @@
             100% {
                 visibility: visible;
             }
+=======
+        .card.bad .eyes::after {
+            transform: rotate(37.5deg);
+        }
+        .card.bad .teardrop {
+            animation: cry 0.1s ease-in 0.25s forwards;
+        }
+        .card.bad .nose {
+            top: 44%;
+        }
+        .card.bad .mouth {
+            top: 42%;
+        }
+        .card.bad .chin {
+            top: 52%;
+        }
+        .card.bad .tail {
+            transform: rotate(0);
+        }
+        @keyframes movetongue {
+            100% {height: 27px;}
+        }
+        @keyframes movetail {
+            0% {transform: rotate(37deg);}
+            100% {transform: rotate(52deg);}
+        }
+        @keyframes cry {
+            100% {visibility: visible;}
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         }
     </style>
 </head>
-
 <body>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
     <header>
         <h1>Quiz</h1>
         <nav>
@@ -689,7 +936,11 @@
     <div class="quiz-wrap">
         <h2>넌센스 퀴즈</h2>
         <div class="quiz">
+<<<<<<< HEAD
             <h3 class="question"></h3>
+=======
+            <h3 class="question">채소 장사꾼이 제일 싫어하는 외국의 도시는?</h3>
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
             <div class="answer">
                 <div class="answer-img">
                     <div class="card">
@@ -720,16 +971,22 @@
     </div>
 
     <script>
+<<<<<<< HEAD
         // 메뉴
         document.querySelector(".ham").addEventListener("click", function () {
             document.querySelector("nav").classList.toggle("show");
         });
 
         // 퀴즈
+=======
+
+        //퀴즈
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         const answerQuestion = document.querySelector(".question");
         const answerConfirm = document.querySelector(".answer-confirm");
         const answerView = document.querySelector(".answer-view");
 
+<<<<<<< HEAD
         // 문제 정보
         const quizAsk = "채소 장사꾼들이 제일 싫어하는 외국의 도시는?";
         const quizAnswer = "시드니";
@@ -745,8 +1002,33 @@
 
             // 정답 클릭 시 강아지가 웃음
             document.querySelector(".card").classList.add("good");
+=======
+        //문제정보
+        const quizAsk = "채소 장사꾼이 제일 싫어하는 외국의 도시는?";
+        const quizAnswer = "시드니";
+
+        //문제출력
+        answerQuestion.innerHTML = quizAsk;
+        answerView.innerHTML = quizAnswer;
+
+        //정답확인
+        answerConfirm.addEventListener("click", ()=>{
+            answerConfirm.style.display = "none";
+            answerView.style.display = "block";
+
+
+            //정답을 눌렀을 때 강아지가 웃어요 ^_~ 히히♡
+        
+        })
+
+
+
+        //메뉴
+        document.querySelector(".ham").addEventListener("click", () => {
+            document.querySelector("nav").classList.toggle("show");
+>>>>>>> 002279245c477934a770f9d45c85cacaa622c8d1
         });
     </script>
-</body>
 
+</body>
 </html>
